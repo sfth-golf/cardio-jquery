@@ -10,6 +10,7 @@ function noResults(keyword) {
     $('.table-body-results').html('');
     $('.feedback').hide();
     $('#alert-message').html('');
+    $('.form-field').focus();
     let keywordCapp = keyword.toUpperCase();
     $('#alert-message').html(`
         <strong>No results for ${keywordCapp}</strong>
