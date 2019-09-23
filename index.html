@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="data/store2.js"></script>
+    <script src="data/ICD.js"></script>
     <title>CARDIO</title>
 </head>
 <body>
     <main class='App'>
+        <div id="alert" class="hidden">
+            <span id="alert-message"></span>
+            <input type="button" class="alert-ok alert-ok--offset btn" value="Try another keyword..." />
+        </div>
         <div id="keyword-search-container">
             <form id="keyword-search-form">
             <input type="text" class="form-field" placeholder="enter keyword..." required />
@@ -19,12 +23,27 @@
             </div>
             </form>
         </div>
+        <div class="feedback"></div>
         <section class="results-section">
             <table>
                 <tbody class="table-body hidden">
+                    <thead>
+                        <tr class="table-head">
+                            <th class="left-head">ICD-10</th>
+                            <th>Description</th>
+                            <th class="right-head">Acuity</th>
+                        </tr>
+                    </thead>
                 </tbody>
             </table>
-            <span class="user-message"></span>
+            <div class="table-wrapper">
+                <div id="top"></div>
+                <table>
+                    <tbody class="table-body-results">
+                    </tbody>
+                </table>
+                <div class="user-message"></div>
+            </div>
         </section>
     </main>
     <script src="script.js"></script>
