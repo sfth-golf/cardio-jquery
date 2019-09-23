@@ -27,7 +27,7 @@ const STORE1 = [
         "name": "diagnosis-5",
         "code": "I44.1",
         "description": "AVB 2nd degree",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-6",
@@ -63,19 +63,19 @@ const STORE1 = [
         "name": "diagnosis-11",
         "code": "I49.3",
         "description": "PVCs",
-        "acuity": "0.00"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-12",
         "code": "I49.9",
         "description": "Cardiac Arrhythmias, Unspecified",
-        "acuity": "0.00"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-13",
         "code": "0079.01",
         "description": "Long-term (current) use of anti-coags.",
-        "acuity": "0.00"
+        "acuity": "0"
     }
 ]
 
@@ -139,7 +139,7 @@ const STORE2 = [
         "name": "diagnosis-7",
         "code": "I50.83-",
         "description": "High Output Heart Failure",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-8",
@@ -186,19 +186,19 @@ const STORE3 = [
         "name": "diagnosis-3",
         "code": "I65.29",
         "description": "Occlusion and Stenosis of Unspec Carotid Artery",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-4",
         "code": "I67.2",
         "description": "Cerebral Atherosclerosis",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-5",
         "code": "I67.89",
         "description": "Other Cerebrovascular Disease",
-        "acuity": "0.0"
+        "acuity": "0"
     }
 ]
     /* diagnosis
@@ -230,7 +230,7 @@ const STORE4 = [
         "name": "diagnosis-1",
         "code": "i10",
         "description": "HTN - essential hypertension",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-2",
@@ -260,13 +260,13 @@ const STORE4 = [
         "name": "diagnosis-6",
         "code": "I13.10",
         "description": "Hypertensive Heart & CKD w/out HF, w/ Stage 1-4 CKD",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-7",
         "code": "I11.9",
         "description": "Hypertensive Heart Disease WITHOUT HF",
-        "acuity": "0.0"
+        "acuity": "0"
     }
 ]
 
@@ -291,7 +291,7 @@ const STORE5 = [
     {
         "name": "diagnosis-1",
         "code": "I20.0",
-        "description": "yy",
+        "description": "Unstable Angina",
         "acuity": "0.218"
     },
     {
@@ -334,13 +334,13 @@ const STORE5 = [
         "name": "diagnosis-8",
         "code": "I25.2",
         "description": "Old MI - healed",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-9",
         "code": "I25.10",
         "description": "ASHD without angina",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-10",
@@ -352,13 +352,13 @@ const STORE5 = [
         "name": "diagnosis-11",
         "code": "I25.9",
         "description": "Chronic ischemic heart disease",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-12",
         "code": "Z98.61",
         "description": "PTCA angioplasty status",
-        "acuity": "0.0"
+        "acuity": "0"
     }
 ]
 
@@ -490,7 +490,7 @@ const STORE7 = [
         "name": "diagnosis-7",
         "code": "I70.35",
         "description": "Atherosclerosis of Other Arteries",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-8",
@@ -544,7 +544,7 @@ const STORE7 = [
         "name": "diagnosis-15",
         "code": "I70.48",
         "description": "Acquired absence of limb, unspec",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-16",
@@ -773,7 +773,7 @@ const STORE10 = [
         "name": "diagnosis-5",
         "code": "z94.0",
         "description": "Kidney Transplant status",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-6",
@@ -1059,13 +1059,13 @@ const STORE14 = [
         "name": "diagnosis-4",
         "code": "n18.1",
         "description": "CKD Stage 1",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-5",
         "code": "n18.2",
         "description": "CKD Stage 2",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-6",
@@ -1077,7 +1077,7 @@ const STORE14 = [
         "name": "diagnosis-7",
         "code": "N19",
         "description": "Unspec kidney Failure",
-        "acuity": "0.0"
+        "acuity": "0"
     }
 ]
 
@@ -1355,37 +1355,37 @@ const STORE17 = [
     {
         "name": "diagnosis-1",
         "code": "E11.311",
-        "description": "Type 2 DM w/unspec diabetic retinopathy w/macular edema",
+        "description": "Type 2 DM w/ unspec diabetic retinopathy w/macular edema",
         "acuity": "0.318"
     },
     {
         "name": "diagnosis-2",
         "code": "E11.319",
-        "description": "Type 2 DM w / unspec diabetic retinopathy without macular edema",
+        "description": "Type 2 DM w/ unspec diabetic retinopathy without macular edema",
         "acuity": "0.318"
     },
     {
         "name": "diagnosis-3",
         "code": "E11.36",
-        "description": "Type2 DM w / diabetic cataract",
+        "description": "Type 2 DM w/ diabetic cataract",
         "acuity": "0.318"
     },
     {
         "name": "diagnosis-4",
         "code": "E10.311",
-        "description": "Type 1 DM w/unspec diabetic retinopathy w/macular edema",
+        "description": "Type 2 DM w/ unspec diabetic retinopathy w/macular edema",
         "acuity": "0.318"
     },
     {
         "name": "diagnosis-5",
         "code": "E10.319",
-        "description": "Type 1 DM w / unspec diabetic retinopathy without macular edema",
+        "description": "Type 2 DM w/ unspec diabetic retinopathy without macular edema",
         "acuity": "0.318"
     },
     {
         "name": "diagnosis-6",
         "code": "E10.36",
-        "description": "Type 1 DM w / diabetic cataract",
+        "description": "Type 2 DM w/ diabetic cataract",
         "acuity": "0.318"
     }
 ]
@@ -1419,19 +1419,19 @@ const STORE18 = [
         "name": "diagnosis-2",
         "code": "E66.3",
         "description": "Overweight",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-3",
         "code": "E66.9",
         "description": "Obesity unspec",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-4",
         "code": "Z68.1",
         "description": "BMI 19.9 or less, Adult",
-        "acuity": "0.0"
+        "acuity": "0"
     },
     {
         "name": "diagnosis-5",

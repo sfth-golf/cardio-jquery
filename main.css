@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS here */
+}
+
 :root {
     background-color: rgb(192, 192, 192);
     color: #868686;

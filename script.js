@@ -249,6 +249,7 @@ function initApp() {
     watchSubmit();
     watchClick();
     watchAlertOk();
+    console.log('App loaded.')
 }
 
 $(initApp);
