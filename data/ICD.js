@@ -1105,13 +1105,13 @@ const STORE15 = [
     {
         "name": "diagnosis-1",
         "code": "E10.9",
-        "description": "Type 2 DM without complication",
+        "description": "Type 1 DM without complication",
         "acuity": "0.104"
     },
     {
         "name": "diagnosis-2",
         "code": "E10.8",
-        "description": "Type 2 DM wit unspec complications",
+        "description": "Type 1 DM wit unspec complications",
         "acuity": "0.318"
     },
     {
@@ -1123,67 +1123,67 @@ const STORE15 = [
     {
         "name": "diagnosis-5",
         "code": "E10 .621 ",
-        "description": "Type 2 DM with foot ulcer",
+        "description": "Type 1 DM with foot ulcer",
         "acuity": ".585 + .318"
     },
     {
         "name": "diagnosis-5",
         "code": "E10 .622 ",
-        "description": "Type 2 DM with other skin ulcer",
+        "description": "Type 1 DM with other skin ulcer",
         "acuity": ".585 + .318"
     },
     {
         "name": "diagnosis-6",
         "code": "E10.21",
-        "description": "Type 2 DM w / diabetic nephropathy",
+        "description": "Type 1 DM w / diabetic nephropathy",
         "acuity": "0.318"
     },
     {
         "name": "diagnosis-7",
         "code": "E10.59",
-        "description": "Type 2 DM with PAD",
+        "description": "Type 1 DM with PAD",
         "acuity": "0.318"
     },
     {
         "name": "diagnosis-8",
         "code": "E10.65",
-        "description": "Type 2 DM with hyperglycemia",
+        "description": "Type 1 DM with hyperglycemia",
         "acuity": "0.318"
     },
     {
         "name": "diagnosis-9",
         "code": "E10.40",
-        "description": "Type 2 DM with neuropathy unspec",
+        "description": "Type 1 DM with neuropathy unspec",
         "acuity": "0.318"
     },
     {
         "name": "diagnosis-10",
         "code": "E10.4",
-        "description": "Type 2 DM with autonomic neuropathy",
+        "description": "Type 1 DM with autonomic neuropathy",
         "acuity": "0.318"
     },
     {
         "name": "diagnosis-11",
         "code": "E10.51",
-        "description": "Type 2 DM diabetic peripheral angiopathy without gangrene",
+        "description": "Type 1 DM diabetic peripheral angiopathy without gangrene",
         "acuity": ".298 + .318"
     },
     {
         "name": "diagnosis-12",
         "code": "E10.51",
-        "description": "Type 2 DM diabetic peripheral angiopathy with gangrene",
+        "description": "Type 1 DM diabetic peripheral angiopathy with gangrene",
         "acuity": "1.461 + .298 + .318"
     },
     {
         "name": "diagnosis-13",
         "code": "E10.621",
-        "description": "Type 2 DM with foot ulcer",
+        "description": "Type 1 DM with foot ulcer",
         "acuity": ".585 + .318"
     },
     {
         "name": "diagnosis-14",
         "code": "E10.630",
-        "description": "Type 2 DM with periodontal disease",
+        "description": "Type 1 DM with periodontal disease",
         "acuity": ".585 + .318"
     }
 ]
