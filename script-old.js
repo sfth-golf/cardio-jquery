@@ -33,22 +33,6 @@ function createTable(number, keyword) {
     initTable();
     let currentStore = eval('STORE' + number);
     for (var i=0; i<currentStore.length; i++) {
-
-        /* BELOW: color coding acuity values: currently nonfunctional for x.xx + y.yy acuity values
-            remember to add ${classColor} to table append.
-
-        if (currentStore[i].acuity >= 1.4) {
-            classColor = "colorify-3"
-        }
-        else if (currentStore[i].acuity >= 1) {
-            classColor = "colorify-2"
-        }
-        else {
-            classColor = "colorify-1"
-        }
-        
-        let acuity = parseFloat(currentStore[i].acuity, 10).toFixed(3); */
-
         $('.table-body-results').append(`
             <tr class="result-row">
                 <td class="left">${currentStore[i].code}</td>
