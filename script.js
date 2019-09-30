@@ -2,24 +2,26 @@
 
 function initTable() {
   $('.user-message').html('');
-  $('.table-body').hide();
+  $('.table-body').css('visibility','hidden');
   $('.table-body-results').html('');
 }
 
 function noResults(keyword) {
-  $('.table-head').hide();
+  $('.table-head').css('visibility','hidden');
   $('.table-body-results').html('');
-  $('.feedback').hide();
+  $('.feedback').css({
+    height: "0px"
+  });
+  $('.feedback').css('visibility','hidden');
   $('#alert-message').html('');
   $('.form-field').focus();
   var keywordCapp = keyword.toUpperCase();
-  $('#alert-message').html("\n        <strong>No results for ".concat(keywordCapp, "</strong>\n    "));
+  $('#alert-message').html("\n        <strong>No results for \"".concat(keywordCapp, "\"</strong>\n    "));
+  $('#alert').css('visibility','visible');
   $('#alert').animate({
-    height: "200px"
+    "max-height": "200px"
   });
-  $('#alert').show();
-  console.log('no results');
-  $('.results-section').show();
+  $('.results-section').css('visibility','visible');
 }
 
 function copyToClipboard(element) {
@@ -37,26 +39,25 @@ function createTable(number, keyword) {
   for (var i = 0; i < currentStore.length; i++) {
     $('.table-body-results').append("\n            <tr class=\"result-row\">\n                <td class=\"left\">".concat(currentStore[i].code, "</td>\n                <td class=\"center\">").concat(currentStore[i].description, "</td>\n                <td class=\"color clipboard right\"><strong>").concat(currentStore[i].acuity, "</strong></td>                \n            </tr>\n        "));
   }
-
+  $('#alert').css({
+    "max-height": "0px"
+  });
   $('.table-wrapper').animate({
     scrollTop: 0
   }, "fast");
   var keywordCaps = keyword.toUpperCase();
-  $('.feedback').html("\n        <span>Displaying results for: <strong>".concat(keywordCaps, "</strong></span>\n    "));
-  $('.feedback').show();
-  $('.feedback').animate({
-    height: "40px"
-  });
-  $('.table-head').show();
+  $('.feedback').html("\n        <span>Displaying <strong>".concat(currentStore.length, "</strong> results for: \"<strong>").concat(keywordCaps, "</strong>\"</span>\n    "));  $('.feedback').css('visibility', 'visible');
+  $('.feedback').animate({height: "40px"});
+  $('.table-head').css('visibility','visible');
   setTimeout(function () {
-    $('.table-body').show();
+    $('.table-body').css('visibility','visible');
   }, 400);
   $('.results-section').css({
-    height: "64px"
+    "max-height": "64px"
   });
-  $('.results-section').show();
+  $('.results-section').css('visibility','visible');
   $('.results-section').animate({
-    height: "400px"
+    "max-height": "500px"
   });
 }
 
@@ -206,24 +207,32 @@ function findTable(keyword) {
 function watchSubmit() {
   $('#keyword-search-form').submit(function (event) {
     event.preventDefault();
-    $('#alert').hide();
+    $('.results-section').css({
+      "max-height": "0px"
+    });
+    $('#alert').css('visibility','hidden');
     var keyword = $('.form-field').val().toLowerCase();
-    $('.results-section').hide();
+    $('.results-section').css('visibility','hidden');
     findTable(keyword);
   });
 }
 
 function watchClick() {
   $('.clipboard').click(function () {
-    console.log('ok');
+    //
   });
 }
 
 function watchAlertOk() {
   $('.alert-ok').click(function () {
-    $('#alert').hide();
+    $('#alert').animate({
+      "max-height": "0px"
+    });
     $('.form-field').val('');
     $('.form-field').focus();
+    setTimeout(function () {
+      $('#alert').css('visibility','hidden');
+    }, 300);
   });
 }
 

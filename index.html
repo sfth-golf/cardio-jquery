@@ -7,14 +7,10 @@
     <link rel="stylesheet" href="main.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="data/ICD.js"></script>
-    <title>CARDIO</title>
+    <title>ICD-10 Lookup (Cardiology)</title>
 </head>
 <body>
     <main class='App'>
-        <div id="alert" class="hidden">
-            <span id="alert-message"></span>
-            <input type="button" class="alert-ok alert-ok--offset btn" value="Try another keyword..." />
-        </div>
         <div id="keyword-search-container">
             <form id="keyword-search-form">
             <input type="text" class="form-field" placeholder="enter keyword..." required />
@@ -23,10 +19,14 @@
             </div>
             </form>
         </div>
+        <noscript class="noscript">
+                <span>You need to enable Javascript to run this app.</span>
+                <div id="noscript-div"></div>
+        </noscript>
         <div class="feedback"></div>
         <section class="results-section">
             <table>
-                <tbody class="table-body hidden">
+                <tbody class="table-body">
                     <thead>
                         <tr class="table-head">
                             <th class="left-head">ICD-10</th>
@@ -45,6 +45,10 @@
                 <div class="user-message"></div>
             </div>
         </section>
+        <div id="alert" class="hidden">
+            <span id="alert-message"></span>
+            <input type="button" class="alert-ok alert-ok--offset btn" value="Try another keyword..." />
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
