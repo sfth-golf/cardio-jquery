@@ -59,6 +59,7 @@ function createTable(number, keyword) {
   $('.results-section').animate({
     "max-height": "500px"
   });
+  $('.form-field').focus();
 }
 
 function findTable(keyword) {
