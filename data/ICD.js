@@ -83,7 +83,6 @@ const STORE1keywords = [
     "svt",
     "caf",
     "paf",
-    "af",
     "afib",
     "af",
     "arr",
@@ -216,10 +215,8 @@ const STORE3keywords = [
     "car",
     "cva",
     "strok",
-    "car",
     "carotid",
     "cer",
-    "cva",
     "stro",
     "str",
     "stroke"
@@ -739,7 +736,6 @@ const STORE9keywords = [
     "var",
     "vari",
     "vein",
-    "var",
     "venous ulcer",
     "venous"
 ]
@@ -872,8 +868,7 @@ const STORE11keywords = [
     "lup",
     "auto",
     "aut",
-    "pan",
-    "aut"
+    "pan"
 ]
     /* diagnosis
     L40 .59 Psoriatic arthropathy - other "423"
